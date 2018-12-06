@@ -13,7 +13,7 @@ namespace Лаба_4
             int count = 0;
             for(int i = 0; i < x.Length;i++)
             {
-                if(x[i] == '*')
+                if(x[i] == '@')
                 {
                     count++;
                 }
@@ -26,7 +26,7 @@ namespace Лаба_4
             string res = "";
             for (int i = 0; i <= n; i++)
             {
-                return x + String.Concat(Enumerable.Repeat("*", n));
+                return x + String.Concat(Enumerable.Repeat("@", n));
             }
             return res;
         }
@@ -34,13 +34,13 @@ namespace Лаба_4
         {
             Console.WriteLine("Введiть рядок символiв");
             string input = Console.ReadLine();
-            char sign = '*';
+            char sign = '@';
             Console.WriteLine("");
-            Console.WriteLine("Номер першого входження  *  у рядок "+ input.IndexOf(sign));
+            Console.WriteLine("Номер першого входження  @  у рядок "+ input.IndexOf(sign));
             Console.WriteLine("");
-            Console.WriteLine("Кiлькiсть усiх входжень * = " + MyCounter(input));
+            Console.WriteLine("Кiлькiсть усiх входжень @ = " + MyCounter(input));
             Console.WriteLine("");
-            Console.WriteLine("Додаємо до кiнця рядка * n разiв");
+            Console.WriteLine("Додаємо до кiнця рядка @ n разiв");
             Console.WriteLine(RepeatingSign(input));
             Console.ReadKey();
 
