@@ -32,6 +32,8 @@ namespace Лаба_4
         }
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Введiть рядок символiв");
             Console.WriteLine("Введiть рядок символiв");
             string input = Console.ReadLine();
             char sign = '@';
